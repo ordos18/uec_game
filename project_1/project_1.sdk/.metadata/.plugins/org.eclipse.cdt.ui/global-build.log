@@ -114,3 +114,1936 @@ mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.siz
 19:58:05 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
 make all 
 make: Nothing to be done for 'all'.
+20:40:33 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:01:09 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/KeyboardAdded.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/KeyboardAdded.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/KeyboardAdded.d" -MT"src/KeyboardAdded.o" -o "src/KeyboardAdded.o" "../src/KeyboardAdded.cc"
+In file included from ../src/KeyboardAdded.cc:7:0:
+../src/KeyboardAdded.h:68:12: warning: 'pushedKeys' defined but not used [-Wunused-variable]
+ static u16 pushedKeys;
+            ^~~~~~~~~~
+'Finished building: ../src/KeyboardAdded.cc'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24528	    508	   3452	  28488	   6f48	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:01:14 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:03:06 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/KeyboardAdded.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/KeyboardAdded.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/KeyboardAdded.d" -MT"src/KeyboardAdded.o" -o "src/KeyboardAdded.o" "../src/KeyboardAdded.cc"
+In file included from ../src/KeyboardAdded.cc:7:0:
+../src/KeyboardAdded.h:68:12: warning: 'pushedKeys' defined but not used [-Wunused-variable]
+ static u16 pushedKeys;
+            ^~~~~~~~~~
+'Finished building: ../src/KeyboardAdded.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24528	    508	   3452	  28488	   6f48	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:03:27 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:04:32 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:08:15 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24556	    508	   3456	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:08:18 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:09:00 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24556	    508	   3456	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:09:02 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:39:00 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24556	    508	   3456	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:39:02 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:39:30 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24556	    508	   3456	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:43:42 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24556	    508	   3456	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:43:54 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24556	    508	   3456	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:43:55 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:44:08 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24556	    508	   3456	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:44:15 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24556	    508	   3456	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:44:18 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:45:21 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24556	    508	   3456	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:47:37 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24556	    508	   3456	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:47:40 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:48:23 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24556	    508	   3456	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:51:14 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24576	    508	   3452	  28536	   6f78	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:51:27 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:52:06 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24556	    508	   3456	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:52:09 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:52:53 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24576	    508	   3452	  28536	   6f78	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:53:08 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:53:53 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:54:30 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24560	    508	   3452	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:54:32 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:54:48 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:57:28 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24588	    508	   3456	  28552	   6f88	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+21:57:40 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:57:56 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+21:58:16 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24560	    508	   3452	  28520	   6f68	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:01:26 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/KeyboardAdded.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/KeyboardAdded.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/KeyboardAdded.d" -MT"src/KeyboardAdded.o" -o "src/KeyboardAdded.o" "../src/KeyboardAdded.cc"
+In file included from ../src/KeyboardAdded.cc:7:0:
+../src/KeyboardAdded.h:68:12: warning: 'pushedKeys' defined but not used [-Wunused-variable]
+ static u16 pushedKeys;
+            ^~~~~~~~~~
+'Finished building: ../src/KeyboardAdded.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24544	    508	   3452	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:01:33 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/KeyboardAdded.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/KeyboardAdded.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/KeyboardAdded.d" -MT"src/KeyboardAdded.o" -o "src/KeyboardAdded.o" "../src/KeyboardAdded.cc"
+In file included from ../src/KeyboardAdded.cc:7:0:
+../src/KeyboardAdded.h:68:12: warning: 'pushedKeys' defined but not used [-Wunused-variable]
+ static u16 pushedKeys;
+            ^~~~~~~~~~
+'Finished building: ../src/KeyboardAdded.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24544	    508	   3452	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:01:42 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/KeyboardAdded.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/KeyboardAdded.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/KeyboardAdded.d" -MT"src/KeyboardAdded.o" -o "src/KeyboardAdded.o" "../src/KeyboardAdded.cc"
+In file included from ../src/KeyboardAdded.cc:7:0:
+../src/KeyboardAdded.h:68:12: warning: 'pushedKeys' defined but not used [-Wunused-variable]
+ static u16 pushedKeys;
+            ^~~~~~~~~~
+'Finished building: ../src/KeyboardAdded.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24544	    508	   3452	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:01:49 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/KeyboardAdded.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/KeyboardAdded.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/KeyboardAdded.d" -MT"src/KeyboardAdded.o" -o "src/KeyboardAdded.o" "../src/KeyboardAdded.cc"
+In file included from ../src/KeyboardAdded.cc:7:0:
+../src/KeyboardAdded.h:68:12: warning: 'pushedKeys' defined but not used [-Wunused-variable]
+ static u16 pushedKeys;
+            ^~~~~~~~~~
+'Finished building: ../src/KeyboardAdded.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24544	    508	   3452	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:02:03 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:14:21 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24544	    508	   3452	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:14:23 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:14:33 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24544	    508	   3452	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:14:58 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24556	    508	   3464	  28528	   6f70	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:14:59 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:15:18 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24544	    508	   3452	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:15:29 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:276:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24544	    508	   3452	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:15:33 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24544	    508	   3452	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:18:31 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/KeyboardAdded.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/KeyboardAdded.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/KeyboardAdded.d" -MT"src/KeyboardAdded.o" -o "src/KeyboardAdded.o" "../src/KeyboardAdded.cc"
+In file included from ../src/KeyboardAdded.cc:7:0:
+../src/KeyboardAdded.h:68:12: warning: 'pushedKeys' defined but not used [-Wunused-variable]
+ static u16 pushedKeys;
+            ^~~~~~~~~~
+'Finished building: ../src/KeyboardAdded.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24544	    508	   3452	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:19:32 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:24:31 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24536	    508	   3452	  28496	   6f50	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:24:38 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:25:31 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24536	    508	   3452	  28496	   6f50	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:25:33 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:25:55 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24544	    508	   3452	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:25:57 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:27:15 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24564	    508	   3456	  28528	   6f70	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:27:16 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:27:32 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24584	    508	   3452	  28544	   6f80	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:27:50 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:28:21 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24544	    508	   3452	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:29:45 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24540	    508	   3456	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:29:47 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:30:15 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:33:50 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/Rectangle.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Rectangle.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Rectangle.d" -MT"src/Rectangle.o" -o "src/Rectangle.o" "../src/Rectangle.cc"
+'Finished building: ../src/Rectangle.cc'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24540	    508	   3456	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:33:53 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:34:20 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/Rectangle.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Rectangle.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Rectangle.d" -MT"src/Rectangle.o" -o "src/Rectangle.o" "../src/Rectangle.cc"
+'Finished building: ../src/Rectangle.cc'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24540	    508	   3456	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:34:21 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:34:31 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/Rectangle.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Rectangle.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Rectangle.d" -MT"src/Rectangle.o" -o "src/Rectangle.o" "../src/Rectangle.cc"
+'Finished building: ../src/Rectangle.cc'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24540	    508	   3456	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:34:33 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:39:25 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:40:31 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24540	    508	   3456	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:40:33 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:40:45 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:41:35 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:42:50 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24424	    508	   3452	  28384	   6ee0	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:42:52 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:43:27 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24444	    508	   3456	  28408	   6ef8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:43:33 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:43:48 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24540	    508	   3456	  28504	   6f58	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:44:54 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24732	    508	   3456	  28696	   7018	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:44:56 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:45:30 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24772	    508	   3456	  28736	   7040	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:45:32 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:47:28 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/Rectangle.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Rectangle.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Rectangle.d" -MT"src/Rectangle.o" -o "src/Rectangle.o" "../src/Rectangle.cc"
+'Finished building: ../src/Rectangle.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24796	    508	   3456	  28760	   7058	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:47:31 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24680	    508	   3452	  28640	   6fe0	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:47:32 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:47:56 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/Rectangle.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Rectangle.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Rectangle.d" -MT"src/Rectangle.o" -o "src/Rectangle.o" "../src/Rectangle.cc"
+'Finished building: ../src/Rectangle.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24656	    508	   3452	  28616	   6fc8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:47:58 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:49:06 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24656	    508	   3452	  28616	   6fc8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:49:11 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:49:23 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24656	    508	   3452	  28616	   6fc8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:49:35 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24636	    508	   3456	  28600	   6fb8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:49:45 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24636	    508	   3456	  28600	   6fb8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:49:48 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:50:13 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24636	    508	   3456	  28600	   6fb8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:50:14 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:51:38 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:51:50 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:52:39 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/Rectangle.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Rectangle.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Rectangle.d" -MT"src/Rectangle.o" -o "src/Rectangle.o" "../src/Rectangle.cc"
+'Finished building: ../src/Rectangle.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24652	    508	   3456	  28616	   6fc8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:52:40 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:53:24 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24672	    508	   3452	  28632	   6fd8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:53:32 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/Rectangle.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Rectangle.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Rectangle.d" -MT"src/Rectangle.o" -o "src/Rectangle.o" "../src/Rectangle.cc"
+'Finished building: ../src/Rectangle.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24656	    508	   3452	  28616	   6fc8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:53:34 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:53:43 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:54:03 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24636	    508	   3456	  28600	   6fb8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:55:04 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/Rectangle.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Rectangle.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Rectangle.d" -MT"src/Rectangle.o" -o "src/Rectangle.o" "../src/Rectangle.cc"
+'Finished building: ../src/Rectangle.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24660	    508	   3456	  28624	   6fd0	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:55:11 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/Rectangle.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Rectangle.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Rectangle.d" -MT"src/Rectangle.o" -o "src/Rectangle.o" "../src/Rectangle.cc"
+'Finished building: ../src/Rectangle.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24636	    508	   3456	  28600	   6fb8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:55:13 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:55:23 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/Rectangle.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Rectangle.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Rectangle.d" -MT"src/Rectangle.o" -o "src/Rectangle.o" "../src/Rectangle.cc"
+'Finished building: ../src/Rectangle.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24660	    508	   3456	  28624	   6fd0	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:55:25 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:56:49 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:58:08 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24768	    508	   3452	  28728	   7038	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:58:17 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24768	    508	   3452	  28728	   7038	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:58:28 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:58:46 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24788	    508	   3456	  28752	   7050	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:58:49 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+22:59:53 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24884	    508	   3456	  28848	   70b0	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:59:56 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24884	    508	   3456	  28848	   70b0	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+22:59:59 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:00:24 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:05:05 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24768	    508	   3452	  28728	   7038	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:05:07 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:05:42 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24752	    508	   3452	  28712	   7028	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:07:03 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24848	    508	   3452	  28808	   7088	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:07:18 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24944	    508	   3452	  28904	   70e8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:07:22 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:08:49 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25168	    508	   3452	  29128	   71c8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:08:51 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:09:14 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:09:29 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:10:34 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25168	    508	   3452	  29128	   71c8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:10:36 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:14:27 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25160	    508	   3452	  29120	   71c0	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:14:29 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:17:49 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25160	    508	   3452	  29120	   71c0	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:17:50 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:19:16 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:21:34 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25160	    508	   3452	  29120	   71c0	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:21:36 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:22:34 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:22:54 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25160	    508	   3452	  29120	   71c0	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:23:04 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25152	    508	   3452	  29112	   71b8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:27:08 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25148	    508	   3456	  29112	   71b8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:30:13 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25148	    508	   3456	  29112	   71b8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:30:14 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:35:33 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:40:14 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25420	    508	   3456	  29384	   72c8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:40:18 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:40:41 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:41:38 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25420	    508	   3456	  29384	   72c8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:41:39 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:42:04 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25420	    508	   3456	  29384	   72c8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:42:06 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:42:21 **** Auto Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/Rectangle.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Rectangle.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Rectangle.d" -MT"src/Rectangle.o" -o "src/Rectangle.o" "../src/Rectangle.cc"
+'Finished building: ../src/Rectangle.cc'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25420	    508	   3456	  29384	   72c8	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+23:42:22 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.
+23:43:56 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.

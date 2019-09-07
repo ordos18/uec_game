@@ -270,11 +270,9 @@ int main(void) {
 	KeyboardAdded MyKeyboard; //W konstruktorze jest ju¿ inicjalizacja
 
 	u8 Index;
-	u8 Index2;
 	u8 S1Flag = 0;
 	u8 S2Flag = 0;
 	u8 Mode = GAMECODE;
-	u8 Keys[10];
 	while (1) {
 		//////////////////////TESTIIIIIIING ///////////////////////////////
 		if(Mode == TESTING) {
@@ -297,99 +295,112 @@ int main(void) {
 		if(Mode == GAMECODE) {
 
 		if (RxDataRecv == TRUE) {
-			while(RxDataRecv == TRUE) {
-				Index = MyKeyboard.KbByteDecode(KeyInst.Key);
-				RxDataRecv = FALSE;
-			}
+				while(RxDataRecv == TRUE) {
+					Index = MyKeyboard.KbByteDecode(KeyInst.Key);
+					if ((pushedKeys >> 15) & 1U) {
+						pushedKeys &= ~(1 << Index);
+						pushedKeys &= ~(1 << 15);
+					}
+					else {
+						pushedKeys |= 1 << Index;
+					}
+					RxDataRecv = FALSE;
+				}
+				if (Index != 15) {//continue;
+
 				//KeyInst.Break = FALSE; //testiiiiiiiiiiiiiiiiiing
-				if(Index == 0) { //A
+				if((pushedKeys >> 2) & 1U) { //A
 					if(Q1.GetXmin() <= 0) {}
 					else{
 						Q1Small.SetXmin(Q1Small.GetXmin() - Q1.GetSpeed());
 						Q1.SetXmin(Q1.GetXmin() - Q1.GetSpeed());
+						if(S1Flag == 0) S1.SetXmin(Q1Small.GetXmin());
 					}
 				}
-				if(Index == 1) { //D
+				if((pushedKeys >> 3) & 1U) { //D
 					if((Q1Small.GetXmin() + Q1Small.GetHLen()) >= HOR_HALF) {}
 					else{
 						Q1Small.SetXmin(Q1Small.GetXmin() + Q1.GetSpeed());
 						Q1.SetXmin(Q1.GetXmin() + Q1.GetSpeed());
+						if(S1Flag == 0) S1.SetXmin(Q1Small.GetXmin());
 					}
 				}
-				if(Index == 2) { //S
+				if((pushedKeys >> 1) & 1U) { //S
 					if((Q1.GetYmin() + Q1.GetHLen()) >= BACK_V_MAX) {}
 					else{
 						Q1Small.SetYmin(Q1Small.GetYmin() + Q1.GetSpeed());
 						Q1.SetYmin(Q1.GetYmin() + Q1.GetSpeed());
+						if(S1Flag == 0) S1.SetYmin(Q1Small.GetYmin());
 					}
 				}
-				if(Index == 3) { //W
+				if((pushedKeys >> 0) & 1U) { //W
 					if(Q1.GetYmin() <= BACK_V_MIN) {}
 					else{
 						Q1Small.SetYmin(Q1Small.GetYmin() - Q1.GetSpeed());
 						Q1.SetYmin(Q1.GetYmin() - Q1.GetSpeed());
+						if(S1Flag == 0) S1.SetYmin(Q1Small.GetYmin());
 					}
 				}
-				if(Index == 4) { //J
+				if((pushedKeys >> 7) & 1U) { //J
 					if(Q2Small.GetXmin() <= HOR_HALF) {}
 					else{
 						Q2Small.SetXmin(Q2Small.GetXmin() - Q2.GetSpeed());
 						Q2.SetXmin(Q2.GetXmin() - Q2.GetSpeed());
+						if(S2Flag == 0) S2.SetXmin(Q2Small.GetXmin());
 					}
 				}
-				if(Index == 6) { // I
+				if((pushedKeys >> 5) & 1U) { // I
 					if(Q2.GetYmin() <= BACK_V_MIN) {}
 					else{
 						Q2Small.SetYmin(Q2Small.GetYmin() - Q2.GetSpeed());
 						Q2.SetYmin(Q2.GetYmin() - Q2.GetSpeed());
+						if(S2Flag == 0) S2.SetYmin(Q2Small.GetYmin());
 					}
 				}
-				if(Index == 7) { // K
+				if((pushedKeys >> 6) & 1U) { // K
 					if((Q2.GetYmin() + Q2.GetHLen()) >= BACK_V_MAX) {}
 					else{
 						Q2Small.SetYmin(Q2Small.GetYmin() + Q2.GetSpeed());
 						Q2.SetYmin(Q2.GetYmin() + Q2.GetSpeed());
+						if(S2Flag == 0) S2.SetYmin(Q2Small.GetYmin());
 					}
 				}
-				if(Index == 8) { //L
+				if((pushedKeys >> 8) & 1U) { //L
 					if((Q2.GetXmin() + Q2.GetHLen()) >= BACK_H_MAX) {}
 					else{
 						Q2Small.SetXmin(Q2Small.GetXmin() + Q2.GetSpeed());
 						Q2.SetXmin(Q2.GetXmin() + Q2.GetSpeed());
+						if(S2Flag == 0) S2.SetXmin(Q2Small.GetXmin());
 					}
 				}
-				if(Index == 5) { //CAPS
+				if((pushedKeys >> 4) & 1U) { //CAPS
 					S1Flag = 1;
 				}
-				else{
-					S1Flag = 0;
-				}
-				if(Index == 9) { //H
+				if((pushedKeys >> 9) & 1U) { //H
 					S2Flag = 1;
-				}
-				else{
-					S2Flag = 0;
 				}
 				Q1Small.Draw();
 				Q1.Draw();
+				S1.Draw();
 				Q2Small.Draw();
 				Q2.Draw();
+				S2.Draw();
+				}
+
 		}
 		else{
 		}
 
-		if(S1Flag == 0) {
-			S1.Disable();
-			S1.Enable();
-			S1.SetXmin(Q1Small.GetXmin());
-			S1.SetYmin(Q1Small.GetYmin());
-		}
-		else{
+		if(S1Flag == 1) {
 			if((S1.GetXmin() + S1.GetHLen()) >= Q2.GetXmin() &&
-			   S1.GetYmin() >= (Q2.GetYmin() - S1.GetHLen()) &&
-			   S1.GetYmin() <= (Q2.GetYmin() + Q2.GetHLen())) {
+			   (S1.GetYmin() + S1.GetHLen()) >= Q2.GetYmin() &&
+			    S1.GetYmin() <= (Q2.GetYmin() + Q2.GetHLen())) {
+					axi_ps2_IntrDisable(&Ps2Inst, axi_ps2_IPIXR_ALL);
 					R2.SetHLen(R2.GetHLen()-50);
 					R2.Draw();
+					S1Flag = 0;
+					S1.SetXmin(Q1Small.GetXmin());
+					S1.SetYmin(Q1Small.GetYmin());
 					if(R2.GetHLen() > 0) {
 
 						u8 i;
@@ -408,15 +419,16 @@ int main(void) {
 						Q2.SetHLen(0);
 						Q2Small.SetHLen(0);
 					}
-					S1Flag = 0;
-					//TODO WYSWIETLENIE NAPISU PLAYER 1 WINS
+					axi_ps2_IntrEnable(&Ps2Inst, axi_ps2_IPIXR_ALL);
 			}
 			else{
-				if(S1.GetXmin() + S1.GetHLen() > BACK_H_MAX) {
+				if(S1.GetXmin() + S1.GetHLen() >= BACK_H_MAX) {
 					S1Flag = 0;
+					S1.SetXmin(Q1Small.GetXmin());
+					S1.SetYmin(Q1Small.GetYmin());
 				}
 				else{
-					usleep(3000);
+					usleep(1000);
 					S1.SetXmin(S1.GetXmin() + S1.GetSpeed());
 				}
 			}
@@ -424,21 +436,19 @@ int main(void) {
 			S1.Draw();
 		}
 
-		if(S2Flag == 0) {
-			S2.Disable();
-			S2.Enable();
-			S2.SetXmin(Q2Small.GetXmin());
-			S2.SetYmin(Q2Small.GetYmin());
-		}
-		else{
+		if(S2Flag == 1) {
 			if(S2.GetXmin() <= (Q1.GetXmin() + Q1.GetHLen()) &&
 			   S2.GetYmin() >= (Q1.GetYmin() - S2.GetHLen()) &&
 			   S2.GetYmin() <= (Q1.GetYmin() + Q1.GetHLen())) {
+				axi_ps2_IntrDisable(&Ps2Inst, axi_ps2_IPIXR_ALL);
 					R1.SetHLen(R1.GetHLen()-50);
 					R1.Draw();
+					S2Flag = 0;
+					S2.SetXmin(Q2Small.GetXmin());
+					S2.SetYmin(Q2Small.GetYmin());
 					if(R1.GetHLen() > 0) {
 					u8 i;
-					for(i = 0; i<5; i++) {
+					for(i = 0; i<1; i++) {
 						Q1.SetRgb(0x000);
 						Q1.Draw();
 						usleep(100000);
@@ -454,16 +464,16 @@ int main(void) {
 						Q1.SetHLen(0);
 						Q1Small.SetHLen(0);
 					}
-					S2Flag = 0;
-					//TODO WYSWIETLENIE NAPISU PLAYER 2 WINS
-
+					axi_ps2_IntrEnable(&Ps2Inst, axi_ps2_IPIXR_ALL);
 			}
 			else{
 				if(S2.GetXmin() < BACK_H_MIN) {
 					S2Flag = 0;
+					S2.SetXmin(Q2Small.GetXmin());
+					S2.SetYmin(Q2Small.GetYmin());
 				}
 				else{
-					usleep(3000);
+					usleep(1000);
 					S2.SetXmin(S2.GetXmin() - S2.GetSpeed());
 				}
 			}

@@ -167,16 +167,13 @@ u8 KeyboardAdded::KbMain(){
 ****************************************************************************/
 
 u8 KeyboardAdded::KbByteDecode(u8 NewChar){
-	u8 Index = 0;
-	while(Index < make_len){
-	 if (make[Index] == NewChar)
-		 break;
-	 else Index++;
+	u8 Index;
+	for(Index = 0; Index < 16; Index++){
+		if (make[Index] == NewChar)
+			return Index;
 	}
-	if(Index == 200-1){
-		return 0xff;
-	}
-	return Index;
+
+	return 0xff;
 }
 
 void KeyboardAdded::KbGetArray(u8 *Keys){

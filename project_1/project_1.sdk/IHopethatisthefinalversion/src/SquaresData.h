@@ -41,17 +41,17 @@
 
 
 //Definition of shot number 1
-#define SHOT1_XPOS 99
+#define SHOT1_XPOS 100
 #define SHOT1_YPOS 539
 #define SHOT1_LEN 20
-#define SHOT1_SPEED 2
+#define SHOT1_SPEED 1
 #define SHOT1_RGB 0x339
 
 //Definition of shot number 2
-#define SHOT2_XPOS 679
+#define SHOT2_XPOS 678
 #define SHOT2_YPOS 539
 #define SHOT2_LEN 20
-#define SHOT2_SPEED 2
+#define SHOT2_SPEED 1
 #define SHOT2_RGB 0x339
 //DEFINITIONS USED FOR DRAWING
 
