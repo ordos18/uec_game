@@ -1,0 +1,104 @@
+/*
+ * KeyboardAdded.h
+ *
+ *  Created on: 29.08.2019
+ *      Author: dom
+ */
+
+#ifndef KEYBOARDADDED_H
+#define KEYBOARDADDED_H
+
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xintc.h"
+#include "stdio.h"
+#include "axi_ps2.h"
+#include "xil_exception.h"
+#include "sleep.h"
+#include "xil_printf.h"
+
+#define INTC_DEVICE_ID		XPAR_MICROBLAZE_0_AXI_INTC_DEVICE_ID
+#define INTR_ID				XPAR_MICROBLAZE_0_AXI_INTC_AXI_PS2_0_PS2_INTERRUPT_INTR
+#define PS2_DEVICE_ID		XPAR_AXI_PS2_0_DEVICE_ID
+
+static axi_ps2 Ps2Inst;
+#define Ps2Ack 		0xfa
+#define Ps2Break 	0xf0
+
+#define KbCapsLed 		0x04
+#define KbScrollLed 	0x01
+#define KbNumLed 		0x02
+
+volatile static int RxDataRecv = FALSE; /* Flag to indicate Receive Data */
+volatile static int RxError = FALSE; 	/* Flag to indicate Receive Error */
+volatile static int RxOverFlow = FALSE; /* Flag to indicate Receive Overflow */
+volatile static int TxDataSent = FALSE; /* Flag to indicate Tx Data sent */
+volatile static int TxNoAck = FALSE;    /* Flag to indicate Tx No Ack */
+volatile static int TimeOut = FALSE;    /* Flag to indicate Watchdog Timeout */
+volatile static int TxNumBytes = 0;	/* Number of bytes transmitted */
+volatile static int RxNumBytes = 0;     /* Number of bytes received */
+
+
+
+typedef struct {
+	volatile u8 Key;
+	u8 Break;
+
+	u8 LShift;
+	u8 HoldLShift;
+
+	u8 RShift;
+	u8 HoldRShift;
+
+	u8 CapsLock;
+	u8 HoldCaps;
+
+	u8 ScrollLock;
+	u8 HoldScroll;
+
+	u8 NumLock;
+	u8 HoldNum;
+
+	u8 KbInitStage;
+	u8 KbLeds;
+
+} DispKey;
+
+const  u8 make[] = {	0x4A, 	0xF0, 	0xFA,	0x1C,	0x32,	0x21,	0x23,	0x24,	0x2B,	0x34,	0x33,	0x43,	0x3B,	0x42,	0x4B,
+				0x3A,	0x31,	0x44,	0x4D,	0x15,	0x2D,	0x1B,	0x2C,	0x3C,	0x2A,	0x1D,	0x22,	0x35,	0x1A,	0x45,	0x16,
+				0x1E,	0x26,	0x25,	0x2E,	0x36,	0x3D,	0x3E,	0x46,	0x0E,	0x4E,	0x55,	0x5D,	0x66,	0x29,	0x0D,	0x58,
+				0x12,	0x14,	0x11,	0x57,	0x5A,	0x76,	0x05,	0x06,	0x04,	0x0C,	0x03,	0x0B,	0x83,	0x0A,	0x01,	0x09,
+				0x78,	0x07,	0x7E,	0x54,	0x5B,	0x77,	0x7C,	0x71,	0x70,	0x69,	0x72,	0x7A,	0x6B,	0x73,	0x74,	0x6C,
+				0x75,	0x7D,	0x7B,	0x79,	0x4C,	0x53,	0x41,	0x49,	0xAA	};
+
+const char *keys[] = {	"init",	"brk",	"ack",	"A",	"B",	"C",	"D",	"E",	"F",	"G",	"H",	"I",	"J",	"K",	"L",
+				"M",	"N",	"O",	"P",	"Q",	"R",	"S",	"T",	"U",	"V",	"W",	"X",	"Y",	"Z",	"0",	"1",
+				"2",	"3",	"4", 	"5",	"6",	"7",	"8",	"9",	"`",	"-",	"=",	"\\",  "\b \b", " ", "\t", "CAPS",
+			"LSHFT", "LCTRL", "LALT", "RSHFT", "\r\n", "ESC",	"F1",	"F2",	"F3",	"F4",	"F5",	"F6",	"F7",	"F8",	"F9",	"F10",
+				"F11", "F12", "SCROLL", "[",	"]", 	"NUM",	"KP*",	"KP.",	"KP0",	"KP1",	"KP2",	"KP3",	"KP4",	"KP5",	"KP6",	"KP7",
+				"KP8",	"KP9",	"KP-",	"KP+",	";",	"'",	",",	".",	"/",	"a",	"b",	"c",	"d",	"e",	"f",	"g",
+				"h",	"i",	"j",    "k",	"l",	"m",	"n",	"o",	"p",	"q",	"r",	"s",	"t",	"u",	"v",	"w",
+				"x",	"y",	"z", 	"0",	"1",	"2",	"3",	"4", 	"5",	"6",	"7",	"8",	"9",	"`",	"-",	"=",
+			  "\\",  "\b \b", " ", "\t", "CAPS", "LSHFT", "LCTRL", "LALT", "RSHFT", "\r\n", "ESC", "F1",	"F2",	"F3",	"F4",	"F5",
+				"F6",	"F7",	"F8",	"F9",	"F10", "F11", "F12",  "SCROLL", "[",	"]", 	"NUM",	"KP*",	"KP.",	"KP0",	"KP1",	"KP2",
+				"KP3",	"KP4",	"KP5",	"KP6",	"KP7", "KP8",  "KP9",	"KP-",	"KP+",	";",	"'",	",",	".",	"/",
+				};
+
+volatile DispKey KeyInst;
+
+class KeyboardAdded{
+public:
+	u8 KeysDown = 0;
+	u8 KbInit = TRUE;
+	u32 buff;
+	KeyboardAdded(void);
+	u8 KbByteDecode(u8 NewChar);
+	u8 KeyboardInit (void);
+	u8 KbWaitReply(u8 Reply);
+	u8 KbLeds (u8 swLed, u8 swOp);
+	u8 KbMain(void);
+};
+
+
+
+#endif /* KEYBOARDADDED_H */

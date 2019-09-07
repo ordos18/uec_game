@@ -1,0 +1,12 @@
+/*
+ * Delay.cc
+ *
+ *  Created on: 05.09.2019
+ *      Author: dom
+ */
+
+void Delay(long int Time){
+	for(long int i = 0; i < Time; i++);
+}
+
+

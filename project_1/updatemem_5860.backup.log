@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# updatemem v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Thu Sep  5 20:06:59 2019
+# Process ID: 5860
+# Current directory: C:/Users/dom/Desktop/Nowecos1/Nowe_coS/project_1
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/Users/dom/Desktop/Nowecos1/Nowe_coS/project_1/project_1.sdk/system_wrapper_hw_platform_0/system_wrapper.mmi -data C:/Xilinx/SDK/2018.3/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc system_i/microblaze_0 -bit C:/Users/dom/Desktop/Nowecos1/Nowe_coS/project_1/project_1.sdk/system_wrapper_hw_platform_0/system_wrapper.bit -out C:/Users/dom/Desktop/Nowecos1/Nowe_coS/project_1/project_1.sdk/system_wrapper_hw_platform_0/download.bit -force
+# Log file: C:/Users/dom/Desktop/Nowecos1/Nowe_coS/project_1/updatemem.log
+# Journal file: C:/Users/dom/Desktop/Nowecos1/Nowe_coS/project_1\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace
+ Loading bitfile C:/Users/dom/Desktop/Nowecos1/Nowe_coS/project_1/project_1.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream C:/Users/dom/Desktop/Nowecos1/Nowe_coS/project_1/project_1.sdk/system_wrapper_hw_platform_0/download.bit...
+  update_mem: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 493.176 ; gain = 407.180
+INFO: [Common 17-206] Exiting updatemem at Thu Sep  5 20:07:14 2019...

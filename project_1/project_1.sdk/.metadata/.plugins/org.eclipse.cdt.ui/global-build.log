@@ -1,0 +1,116 @@
+19:52:33 **** Clean-only build of configuration Debug for project IHopethatisthefinalversion ****
+make clean 
+rm -rf  ./src/KeyboardAdded.d ./src/Rectangle.d ./src/main.d  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o  IHopethatisthefinalversion.elf.size  IHopethatisthefinalversion.elf
+' '
+19:52:33 **** Clean-only build of project IHopethatisthefinalversion_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/axi_ps2_v1_0/src -s clean 
+rm: nie mo¿na wykonaæ lstat na `*.o': Invalid argument
+make[1]: *** [Makefile:26: clean] Error 1
+make: *** [Makefile:33: microblaze_0/libsrc/axi_ps2_v1_0/src/make.clean] Error 2
+make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_8/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_8/src -s clean 
+make -C microblaze_0/libsrc/standalone_v6_8/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+make -C microblaze_0/libsrc/VGA_SQUAREDRAW_v1_0/src -s clean 
+rm: nie mo¿na wykonaæ lstat na `*.o': Invalid argument
+make[1]: *** [Makefile:26: clean] Error 1
+make: *** [Makefile:33: microblaze_0/libsrc/VGA_SQUAREDRAW_v1_0/src/make.clean] Error 2
+make: Target 'clean' not remade because of errors.
+19:57:56 **** Build of project IHopethatisthefinalversion_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/axi_ps2_v1_0/src"
+make -C microblaze_0/libsrc/axi_ps2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_8/src"
+make -C microblaze_0/libsrc/intc_v3_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/VGA_SQUAREDRAW_v1_0/src"
+make -C microblaze_0/libsrc/VGA_SQUAREDRAW_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/axi_ps2_v1_0/src"
+make -C microblaze_0/libsrc/axi_ps2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling axi_ps2..."
+axi_ps2.c: In function 'axi_ps2_StubHandler':
+axi_ps2.c:418:39: warning: unused parameter 'CallBackRef' [-Wunused-parameter]
+ static void axi_ps2_StubHandler(void *CallBackRef, u32 IntrMask, u32 ByteCount)
+                                       ^~~~~~~~~~~
+axi_ps2.c:418:56: warning: unused parameter 'IntrMask' [-Wunused-parameter]
+ static void axi_ps2_StubHandler(void *CallBackRef, u32 IntrMask, u32 ByteCount)
+                                                        ^~~~~~~~
+axi_ps2.c:418:70: warning: unused parameter 'ByteCount' [-Wunused-parameter]
+ static void axi_ps2_StubHandler(void *CallBackRef, u32 IntrMask, u32 ByteCount)
+                                                                      ^~~~~~~~~
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_8/src"
+make -C microblaze_0/libsrc/intc_v3_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+"Running Make libs in microblaze_0/libsrc/VGA_SQUAREDRAW_v1_0/src"
+make -C microblaze_0/libsrc/VGA_SQUAREDRAW_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling VGA_SQUAREDRAW..."
+VGA_SQUAREDRAW_selftest.c: In function 'VGA_SQUAREDRAW_Reg_SelfTest':
+VGA_SQUAREDRAW_selftest.c:52:63: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( VGA_SQUAREDRAW_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                               ^~
+VGA_SQUAREDRAW_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building libraries'
+19:58:02 **** Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+'Building file: ../src/KeyboardAdded.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/KeyboardAdded.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/KeyboardAdded.d" -MT"src/KeyboardAdded.o" -o "src/KeyboardAdded.o" "../src/KeyboardAdded.cc"
+'Finished building: ../src/KeyboardAdded.cc'
+' '
+'Building file: ../src/Rectangle.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Rectangle.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Rectangle.d" -MT"src/Rectangle.o" -o "src/Rectangle.o" "../src/Rectangle.cc"
+'Finished building: ../src/Rectangle.cc'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../IHopethatisthefinalversion_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:273:5: warning: unused variable 'Index2' [-Wunused-variable]
+  u8 Index2;
+     ^~~~~~
+../src/main.cc:277:5: warning: unused variable 'Keys' [-Wunused-variable]
+  u8 Keys[10];
+     ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: IHopethatisthefinalversion.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../IHopethatisthefinalversion_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IHopethatisthefinalversion.elf"  ./src/KeyboardAdded.o ./src/Rectangle.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: IHopethatisthefinalversion.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IHopethatisthefinalversion.elf  |tee "IHopethatisthefinalversion.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24056	    508	   3452	  28016	   6d70	IHopethatisthefinalversion.elf
+'Finished building: IHopethatisthefinalversion.elf.size'
+' '
+19:58:05 **** Incremental Build of configuration Debug for project IHopethatisthefinalversion ****
+make all 
+make: Nothing to be done for 'all'.

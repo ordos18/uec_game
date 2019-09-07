@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;IHopethatisthefinalversion/src/Keyboard.h&apos;" deleteContents="false" description="Delete resource &apos;IHopethatisthefinalversion/src/Keyboard.h&apos;" element1="/IHopethatisthefinalversion/src/Keyboard.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1567339733640"/>
+</session>

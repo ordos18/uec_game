@@ -1,0 +1,19 @@
+/*
+ * Rectangle.h
+ *
+ *  Created on: 03.09.2019
+ *      Author: dom
+ */
+
+#include "Square.h"
+
+#ifndef SRC_RECTANGLE_H_
+#define SRC_RECTANGLE_H_
+
+class Rectangle : public Square{
+
+};
+
+
+
+#endif /* SRC_RECTANGLE_H_ */

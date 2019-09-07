@@ -1,0 +1,48 @@
+/*
+ * Square.h
+ *
+ *  Created on: 29.08.2019
+ *      Author: dom
+ */
+#include "SquaresData.h"
+#include "xparameters.h"
+#include "VGA_SQUAREDRAW.h"
+
+#define VGA_DEVICE XPAR_VGA_SQUAREDRAW_0_S00_AXI_BASEADDR
+
+#ifndef SRC_SQUARE_H_
+#define SRC_SQUARE_H_
+
+
+class Square{
+private:
+	int X_min;
+	int Y_min;
+	int SideL;
+	int speed;
+	u16 rgb;
+	u16 Number;
+public:
+	Square(u16 number,int xmin,int ymin,int side,u16 rgb,int speed);
+	void Draw(void);
+	//Ser methods
+	void SetXmin(int xmin);
+	void SetYmin(int ymin);
+	void SetSideL(int side);
+	void SetSpeed(int speed);
+	void SetRgb(u16 rgb);
+	void SetNumber(u16 number);
+
+	//Get methods
+	int GetXmin(void);
+	int GetYmin(void);
+	int GetSideL(void);
+	int GetSpeed(void);
+	u16 GetRgb(void);
+	u16 GetNumber(void);
+
+	//Eraser
+	void Erase(u16 Sqnumber);
+};
+
+#endif /* SRC_SQUARE_H_ */

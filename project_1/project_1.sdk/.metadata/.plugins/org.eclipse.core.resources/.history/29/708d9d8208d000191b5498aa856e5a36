@@ -1,0 +1,87 @@
+/*
+ * Square.cc
+ *
+ *  Created on: 29.08.2019
+ *      Author: dom
+ */
+#include "Square.h"
+
+Square::Square(u16 number,int xmin,int ymin,int side,u16 rgb,int speed){
+	Square::Number = number;
+	Square::X_min = xmin;
+	Square::Y_min = ymin;
+	Square::SideL = side;
+	Square::rgb = rgb;
+	Square::speed = speed;
+}
+void Square::Draw(void){
+	Square::Choose();
+	Square::Enable();
+	VGA_SQUAREDRAW_mWriteReg(VGA_DEVICE, REG0_OFFSET, Square::Y_min);
+	VGA_SQUAREDRAW_mWriteReg(VGA_DEVICE, REG1_OFFSET, Square::Y_min + Square::SideL);
+	VGA_SQUAREDRAW_mWriteReg(VGA_DEVICE, REG2_OFFSET, Square::X_min);
+	VGA_SQUAREDRAW_mWriteReg(VGA_DEVICE, REG3_OFFSET, Square::X_min + Square::SideL);
+	VGA_SQUAREDRAW_mWriteReg(VGA_DEVICE, REG4_OFFSET, Square::rgb);
+}
+//Set methods
+void Square::SetXmin(int xmin){
+	Square::X_min = xmin;
+}
+void Square::SetYmin(int ymin){
+	Square::Y_min = ymin;
+}
+void Square::SetSideL(int side){
+	Square::SideL = side;
+}
+void Square::SetSpeed(int speed){
+	Square::speed = speed;
+}
+void Square::SetRgb(u16 rgb){
+	Square::rgb = rgb;
+}
+
+//Get methods
+int Square::GetXmin(void){
+	return Square::X_min;
+}
+int Square::GetYmin(void){
+	return Square::Y_min;
+}
+int Square::GetSideL(void){
+	return Square::SideL;
+}
+int Square::GetSpeed(void){
+	return Square::speed;
+}
+u16 Square::GetRgb(void){
+	return Square::rgb;
+}
+u16 Square::GetNumber(void){
+	return Square::Number;
+}
+
+
+
+void Square::Disable(void){
+	Square::Choose(Square::Number);
+	VGA_SQUAREDRAW_mWriteReg(VGA_DEVICE, REG6_OFFSET, 1);
+}
+
+void Square::Enable(void){
+	Square::Choose(Square::Number);
+	VGA_SQUAREDRAW_mWriteReg(VGA_DEVICE, REG6_OFFSET, 0);
+}
+
+void Square::Flash(void){
+	Square::Choose();
+	Square::Disable();
+	sleep(1);
+	Square::Enable();
+	Square::Draw();
+
+}
+
+void Square::Choose(void){
+	VGA_SQUAREDRAW_mWriteReg(VGA_DEVICE, REG5_OFFSET, Square::Number);
+}
+
