@@ -1,4 +1,4 @@
-activeuserprofiles=Team;Vrael;dom-dell
+activeuserprofiles=Maniek-PC;Team
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=Puszek
-useridperkey=Vrael.Local\=Puszek;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=Maniek
+useridperkey=Maniek-PC.Local\=Maniek;

@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Fri Aug 23 23:46:35 2019
-// Host        : Vrael running 64-bit major release  (build 9200)
+// Date        : Sun Sep  8 23:00:53 2019
+// Host        : Maniek-PC running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode synth_stub
-//               C:/Users/Puszek/Desktop/Nowe_coS/project_1/project_1.srcs/sources_1/bd/system/ip/system_RGB_Decoder_0_0/system_RGB_Decoder_0_0_stub.v
+//               E:/Xilinx/Projects/Microblaze/Nowe_coS/project_1/project_1.srcs/sources_1/bd/system/ip/system_RGB_Decoder_0_0/system_RGB_Decoder_0_0_stub.v
 // Design      : system_RGB_Decoder_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1

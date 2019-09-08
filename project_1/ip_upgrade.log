@@ -1,6 +1,69 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Sep  8 21:38:04 2019
+| Host         : Maniek-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_VGA_SQUAREDRAW_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_VGA_SQUAREDRAW_0_1 (xilinx.com:user:VGA_SQUAREDRAW:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Sep  8 21:35:33 2019
+| Host         : Maniek-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ps2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_ps2_0_0 (digilentinc.com:IP:axi_ps2:1.0) from (Rev. 3) to (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Sep  8 21:27:58 2019
+| Host         : Maniek-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_VGA_SQUAREDRAW_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_VGA_SQUAREDRAW_0_1 (xilinx.com:user:VGA_SQUAREDRAW:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 | Date         : Tue Aug 27 20:00:47 2019
 | Host         : Vrael running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

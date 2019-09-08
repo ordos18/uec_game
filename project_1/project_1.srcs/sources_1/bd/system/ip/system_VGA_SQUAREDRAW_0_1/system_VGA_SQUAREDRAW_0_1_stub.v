@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Tue Aug 27 20:01:59 2019
-// Host        : Vrael running 64-bit major release  (build 9200)
+// Date        : Sun Sep  8 23:02:16 2019
+// Host        : Maniek-PC running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode synth_stub
-//               C:/Users/Puszek/Desktop/Nowe_coS/project_1/project_1.srcs/sources_1/bd/system/ip/system_VGA_SQUAREDRAW_0_1/system_VGA_SQUAREDRAW_0_1_stub.v
+//               E:/Xilinx/Projects/Microblaze/Nowe_coS/project_1/project_1.srcs/sources_1/bd/system/ip/system_VGA_SQUAREDRAW_0_1/system_VGA_SQUAREDRAW_0_1_stub.v
 // Design      : system_VGA_SQUAREDRAW_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1

@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:VGA_SQUAREDRAW:1.0
-// IP Revision: 6
+// IP Revision: 8
 
 (* X_CORE_INFO = "VGA_SQUAREDRAW_v1_0,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "system_VGA_SQUAREDRAW_0_1,VGA_SQUAREDRAW_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "system_VGA_SQUAREDRAW_0_1,VGA_SQUAREDRAW_v1_0,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=VGA_SQUAREDRAW,x_ipVersion=1.0,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=6}" *)
+(* CORE_GENERATION_INFO = "system_VGA_SQUAREDRAW_0_1,VGA_SQUAREDRAW_v1_0,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=VGA_SQUAREDRAW,x_ipVersion=1.0,x_ipCoreRevision=8,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=6}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_VGA_SQUAREDRAW_0_1 (
   hcount_in,
