@@ -9,19 +9,19 @@
 #define SRC_RECTANGLESDATA_H_
 
 //Rect1
-#define R1_XPOS 149
+#define R1_XPOS 49
 #define R1_YPOS 20
-#define R1_HLEN 200
+#define R1_HLEN 300
 #define R1_VLEN 20
-#define R1_SPEED 0
+#define R1_SPEED 50
 #define R1_RGB 0x030
 
 //Rect2
 #define R2_XPOS 449
 #define R2_YPOS 20
-#define R2_HLEN 200
+#define R2_HLEN 300
 #define R2_VLEN 20
-#define R2_SPEED 0
+#define R2_SPEED 50
 #define R2_RGB 0x030
 
 //Center Line

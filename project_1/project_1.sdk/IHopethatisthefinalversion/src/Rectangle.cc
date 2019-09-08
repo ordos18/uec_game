@@ -71,7 +71,6 @@ u16 Rectangle::GetNumber(void){
 void Rectangle::Disable(void){
 	Rectangle::Choose();
 	VGA_SQUAREDRAW_mWriteReg(VGA_DEVICE, REG6_OFFSET, 1);
-	VGA_SQUAREDRAW_mWriteReg(VGA_DEVICE, REG5_OFFSET, 0);
 }
 
 void Rectangle::Enable(void){

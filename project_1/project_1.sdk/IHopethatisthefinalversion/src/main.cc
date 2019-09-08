@@ -92,6 +92,7 @@ using namespace std;
 
 /************************** Function Prototypes *****************************/
 void MB_Sleep(u32 MilliSeconds);
+void resetGame(void);
 int Ps2IntrExample(XIntc* IntcInstPtr, axi_ps2* Ps2InstPtr,	u16 Ps2DeviceId, u16 Ps2IntrId);
 static void Ps2IntrHandler(void *CallBackRef, u32 Event, u32 EventData);
 static int Ps2SetupIntrSystem(XIntc* IntcInstPtr, axi_ps2 *Ps2Ptr, u16 IntrId);
@@ -170,77 +171,17 @@ int main(void) {
 	TxNumBytes = 0;
 
 	//DRAWING CODE
-	static int Q1Xpos = SQ1_XPOS;
-	static int Q1Ypos = SQ1_YPOS;
-	static int Q1Len = SQ1_LEN;
-	static int Q1Speed = SQ1_SPEED;
-	static int Q1RGB = SQ1_RGB;
 
-	//Definition of square number 2
-	static int Q2Xpos = SQ2_XPOS;
-	static int Q2Ypos = SQ2_YPOS;
-	static int Q2Len = SQ2_LEN;
-	static int Q2Speed = SQ2_SPEED;
-	static int Q2RGB = SQ2_RGB;
-
-
-	//Definition of shot number 1
-	static int S1Xpos = SHOT1_XPOS;
-	static int S1Ypos = SHOT1_YPOS;
-	static int S1Len =  SHOT1_LEN;
-	static int S1Speed = SHOT1_SPEED;
-	static int S1RGB = SHOT1_RGB;
-
-	//Definition of shot number 2
-	static int S2Xpos = SHOT2_XPOS;
-	static int S2Ypos = SHOT2_YPOS;
-	static int S2Len =  SHOT2_LEN;
-	static int S2Speed = SHOT2_SPEED;
-	static int S2RGB = SHOT2_RGB;
-
-	//Definition of rectangle 1
-	static int R1Xpos = R1_XPOS;
-	static int R1Ypos = R1_YPOS;
-	static int R1RGB = R1_RGB;
-	static int R1Speed = R1_SPEED;
-	static int R1Hlen = R1_HLEN;
-	static int R1Vlen = R1_VLEN;
-
-	//Definition of rectangle 2
-	static int R2Xpos = R2_XPOS;
-	static int R2Ypos = R2_YPOS;
-	static int R2RGB = R2_RGB;
-	static int R2Speed = R2_SPEED;
-	static int R2Hlen = R2_HLEN;
-	static int R2Vlen = R2_VLEN;
-
-	//Definition of center line
-	static int CLXpos = CL_XPOS;
-	static int CLYpos = CL_YPOS;
-	static int CLRGB = CL_RGB;
-	static int CLSpeed = CL_SPEED;
-	static int CLHlen = CL_HLEN;
-	static int CLVlen = CL_VLEN;
-
-	//Definition of top line
-	static int TLXpos = TL_XPOS;
-	static int TLYpos = TL_YPOS;
-	static int TLRGB = TL_RGB;
-	static int TLSpeed = TL_SPEED;
-	static int TLHlen = TL_HLEN;
-	static int TLVlen = TL_VLEN;
-
-
-	Rectangle Q1Small	(5, S1Xpos, S1Ypos, S1Len, S1Len, S1RGB, Q1Speed);
-	Rectangle Q1		(1, Q1Xpos, Q1Ypos, Q1Len, Q1Len, Q1RGB, Q1Speed);
-	Rectangle S1		(2, S1Xpos, S1Ypos, S1Len, S1Len, S1RGB, S1Speed);
-	Rectangle Q2Small	(6, S2Xpos, S2Ypos, S2Len, S2Len, S2RGB, Q2Speed);
-	Rectangle S2		(4, S2Xpos, S2Ypos, S2Len, S2Len, S2RGB, S2Speed);
-	Rectangle Q2		(3, Q2Xpos, Q2Ypos, Q2Len, Q2Len, Q2RGB, Q2Speed);
-	Rectangle R1		(7, R1Xpos, R1Ypos, R1Hlen, R1Vlen, R1RGB, R1Speed);
-	Rectangle R2		(8, R2Xpos, R2Ypos, R2Hlen, R2Vlen, R2RGB, R2Speed);
-	Rectangle CL		(9, CLXpos, CLYpos, CLHlen, CLVlen, CLRGB, CLSpeed);
-	Rectangle TL		(10, TLXpos, TLYpos, TLHlen, TLVlen, TLRGB, TLSpeed);
+	Rectangle Q1		(1, SQ1_XPOS, SQ1_YPOS, SQ1_LEN, SQ1_LEN, SQ1_RGB, SQ1_SPEED);
+	Rectangle Q1Small	(2, SHOT1_XPOS, SHOT1_YPOS, SHOT1_LEN, SHOT1_LEN, SHOT1_RGB, SQ1_SPEED);
+	Rectangle S1		(3, SHOT1_XPOS, SHOT1_YPOS, SHOT1_LEN, SHOT1_LEN, SHOT1_RGB, SHOT1_SPEED);
+	Rectangle Q2		(4, SQ2_XPOS, SQ2_YPOS, SQ2_LEN, SQ2_LEN, SQ2_RGB, SQ2_SPEED);
+	Rectangle Q2Small	(5, SHOT2_XPOS, SHOT2_YPOS, SHOT2_LEN, SHOT2_LEN, SHOT2_RGB, SQ2_SPEED);
+	Rectangle S2		(6, SHOT2_XPOS, SHOT2_YPOS, SHOT2_LEN, SHOT2_LEN, SHOT2_RGB, SHOT2_SPEED);
+	Rectangle R1		(7, R1_XPOS, R1_YPOS, R1_HLEN, R1_VLEN, R1_RGB, R1_SPEED);
+	Rectangle R2		(8, R2_XPOS, R2_YPOS, R2_HLEN, R2_VLEN, R2_RGB, R2_SPEED);
+	Rectangle CL		(9, CL_XPOS, CL_YPOS, CL_HLEN, CL_VLEN, CL_RGB, CL_SPEED);
+	Rectangle TL		(10, TL_XPOS, TL_YPOS, TL_HLEN, TL_VLEN, TL_RGB, TL_SPEED);
 
 
 	Q1.Disable();
@@ -272,6 +213,8 @@ int main(void) {
 	u8 Index;
 	u8 S1Flag = 0;
 	u8 S2Flag = 0;
+	u8 ShotFlyFlag = 0;
+	u8 GameOver = 0;
 	u8 Mode = GAMECODE;
 	while (1) {
 		//////////////////////TESTIIIIIIING ///////////////////////////////
@@ -306,85 +249,135 @@ int main(void) {
 					}
 					RxDataRecv = FALSE;
 				}
-				if (Index != 15) {//continue;
+				if (GameOver == 1) {
+					if ((pushedKeys >> 10) & 1U) {
+
+							Q1.SetXmin(SQ1_XPOS);
+							Q1.SetYmin(SQ1_YPOS);
+							S1.SetXmin(SHOT1_XPOS);
+							S1.SetYmin(SHOT1_YPOS);
+							Q1Small.SetXmin(SHOT1_XPOS);
+							Q1Small.SetYmin(SHOT1_YPOS);
+
+							Q2.SetXmin(SQ2_XPOS);
+							Q2.SetYmin(SQ2_YPOS);
+							S2.SetXmin(SHOT2_XPOS);
+							S2.SetYmin(SHOT2_YPOS);
+							Q2Small.SetXmin(SHOT2_XPOS);
+							Q2Small.SetYmin(SHOT2_YPOS);
+
+							R1.SetHLen(R1_HLEN);
+							R2.SetHLen(R2_HLEN);
+
+
+							Q1.Enable();
+							Q1Small.Enable();
+							Q2.Enable();
+							Q2Small.Enable();
+							R1.Enable();
+							R2.Enable();
+
+
+							Q1Small.Draw();
+							Q1.Draw();
+							S1.Draw();
+							Q2Small.Draw();
+							Q2.Draw();
+							S1.Draw();
+							R1.Draw();
+							R2.Draw();
+
+							GameOver = 0;
+					}
+					else {
+						continue;
+					}
+				}
+				if (Index != 15) { //key release
 
 				//KeyInst.Break = FALSE; //testiiiiiiiiiiiiiiiiiing
-				if((pushedKeys >> 2) & 1U) { //A
-					if(Q1.GetXmin() <= 0) {}
-					else{
-						Q1Small.SetXmin(Q1Small.GetXmin() - Q1.GetSpeed());
-						Q1.SetXmin(Q1.GetXmin() - Q1.GetSpeed());
-						if(S1Flag == 0) S1.SetXmin(Q1Small.GetXmin());
+
+					if(pushedKeys && 0x001F ) { //left side
+						if((pushedKeys >> 0) & 1U) { //W
+							if(Q1.GetYmin() <= BACK_V_MIN) {}
+							else{
+								Q1Small.SetYmin(Q1Small.GetYmin() - Q1.GetSpeed());
+								Q1.SetYmin(Q1.GetYmin() - Q1.GetSpeed());
+								if(S1Flag == 0) S1.SetYmin(Q1Small.GetYmin());
+							}
+						}
+						if((pushedKeys >> 2) & 1U) { //A
+							if(Q1.GetXmin() <= 0) {}
+							else{
+								Q1Small.SetXmin(Q1Small.GetXmin() - Q1.GetSpeed());
+								Q1.SetXmin(Q1.GetXmin() - Q1.GetSpeed());
+								if(S1Flag == 0) S1.SetXmin(Q1Small.GetXmin());
+							}
+						}
+						if((pushedKeys >> 1) & 1U) { //S
+							if((Q1.GetYmin() + Q1.GetHLen()) >= BACK_V_MAX) {}
+							else{
+								Q1Small.SetYmin(Q1Small.GetYmin() + Q1.GetSpeed());
+								Q1.SetYmin(Q1.GetYmin() + Q1.GetSpeed());
+								if(S1Flag == 0) S1.SetYmin(Q1Small.GetYmin());
+							}
+						}
+						if((pushedKeys >> 3) & 1U) { //D
+							if((Q1Small.GetXmin() + 2*Q1Small.GetHLen()) >= HOR_HALF) {}
+							else{
+								Q1Small.SetXmin(Q1Small.GetXmin() + Q1.GetSpeed());
+								Q1.SetXmin(Q1.GetXmin() + Q1.GetSpeed());
+								if(S1Flag == 0) S1.SetXmin(Q1Small.GetXmin());
+							}
+						}
+						if((pushedKeys >> 4) & 1U) { //CAPS
+							S1Flag = 1;
+						}
+						Q1Small.Draw();
+						Q1.Draw();
+						S1.Draw();
 					}
-				}
-				if((pushedKeys >> 3) & 1U) { //D
-					if((Q1Small.GetXmin() + Q1Small.GetHLen()) >= HOR_HALF) {}
-					else{
-						Q1Small.SetXmin(Q1Small.GetXmin() + Q1.GetSpeed());
-						Q1.SetXmin(Q1.GetXmin() + Q1.GetSpeed());
-						if(S1Flag == 0) S1.SetXmin(Q1Small.GetXmin());
+
+					if(pushedKeys && 0x03E0 ) { //right side
+						if((pushedKeys >> 7) & 1U) { //J
+							if((Q2Small.GetXmin() - Q2Small.GetHLen()) < HOR_HALF) {}
+							else{
+								Q2Small.SetXmin(Q2Small.GetXmin() - Q2.GetSpeed());
+								Q2.SetXmin(Q2.GetXmin() - Q2.GetSpeed());
+								if(S2Flag == 0) S2.SetXmin(Q2Small.GetXmin());
+							}
+						}
+						if((pushedKeys >> 5) & 1U) { // I
+							if(Q2.GetYmin() <= BACK_V_MIN) {}
+							else{
+								Q2Small.SetYmin(Q2Small.GetYmin() - Q2.GetSpeed());
+								Q2.SetYmin(Q2.GetYmin() - Q2.GetSpeed());
+								if(S2Flag == 0) S2.SetYmin(Q2Small.GetYmin());
+							}
+						}
+						if((pushedKeys >> 6) & 1U) { // K
+							if((Q2.GetYmin() + Q2.GetHLen()) >= BACK_V_MAX) {}
+							else{
+								Q2Small.SetYmin(Q2Small.GetYmin() + Q2.GetSpeed());
+								Q2.SetYmin(Q2.GetYmin() + Q2.GetSpeed());
+								if(S2Flag == 0) S2.SetYmin(Q2Small.GetYmin());
+							}
+						}
+						if((pushedKeys >> 8) & 1U) { //L
+							if((Q2.GetXmin() + Q2.GetHLen()) >= BACK_H_MAX) {}
+							else{
+								Q2Small.SetXmin(Q2Small.GetXmin() + Q2.GetSpeed());
+								Q2.SetXmin(Q2.GetXmin() + Q2.GetSpeed());
+								if(S2Flag == 0) S2.SetXmin(Q2Small.GetXmin());
+							}
+						}
+						if((pushedKeys >> 9) & 1U) { //H
+							S2Flag = 1;
+						}
+						Q2Small.Draw();
+						Q2.Draw();
+						S2.Draw();
 					}
-				}
-				if((pushedKeys >> 1) & 1U) { //S
-					if((Q1.GetYmin() + Q1.GetHLen()) >= BACK_V_MAX) {}
-					else{
-						Q1Small.SetYmin(Q1Small.GetYmin() + Q1.GetSpeed());
-						Q1.SetYmin(Q1.GetYmin() + Q1.GetSpeed());
-						if(S1Flag == 0) S1.SetYmin(Q1Small.GetYmin());
-					}
-				}
-				if((pushedKeys >> 0) & 1U) { //W
-					if(Q1.GetYmin() <= BACK_V_MIN) {}
-					else{
-						Q1Small.SetYmin(Q1Small.GetYmin() - Q1.GetSpeed());
-						Q1.SetYmin(Q1.GetYmin() - Q1.GetSpeed());
-						if(S1Flag == 0) S1.SetYmin(Q1Small.GetYmin());
-					}
-				}
-				if((pushedKeys >> 7) & 1U) { //J
-					if(Q2Small.GetXmin() <= HOR_HALF) {}
-					else{
-						Q2Small.SetXmin(Q2Small.GetXmin() - Q2.GetSpeed());
-						Q2.SetXmin(Q2.GetXmin() - Q2.GetSpeed());
-						if(S2Flag == 0) S2.SetXmin(Q2Small.GetXmin());
-					}
-				}
-				if((pushedKeys >> 5) & 1U) { // I
-					if(Q2.GetYmin() <= BACK_V_MIN) {}
-					else{
-						Q2Small.SetYmin(Q2Small.GetYmin() - Q2.GetSpeed());
-						Q2.SetYmin(Q2.GetYmin() - Q2.GetSpeed());
-						if(S2Flag == 0) S2.SetYmin(Q2Small.GetYmin());
-					}
-				}
-				if((pushedKeys >> 6) & 1U) { // K
-					if((Q2.GetYmin() + Q2.GetHLen()) >= BACK_V_MAX) {}
-					else{
-						Q2Small.SetYmin(Q2Small.GetYmin() + Q2.GetSpeed());
-						Q2.SetYmin(Q2.GetYmin() + Q2.GetSpeed());
-						if(S2Flag == 0) S2.SetYmin(Q2Small.GetYmin());
-					}
-				}
-				if((pushedKeys >> 8) & 1U) { //L
-					if((Q2.GetXmin() + Q2.GetHLen()) >= BACK_H_MAX) {}
-					else{
-						Q2Small.SetXmin(Q2Small.GetXmin() + Q2.GetSpeed());
-						Q2.SetXmin(Q2.GetXmin() + Q2.GetSpeed());
-						if(S2Flag == 0) S2.SetXmin(Q2Small.GetXmin());
-					}
-				}
-				if((pushedKeys >> 4) & 1U) { //CAPS
-					S1Flag = 1;
-				}
-				if((pushedKeys >> 9) & 1U) { //H
-					S2Flag = 1;
-				}
-				Q1Small.Draw();
-				Q1.Draw();
-				S1.Draw();
-				Q2Small.Draw();
-				Q2.Draw();
-				S2.Draw();
 				}
 
 		}
@@ -396,12 +389,12 @@ int main(void) {
 			   (S1.GetYmin() + S1.GetHLen()) >= Q2.GetYmin() &&
 			    S1.GetYmin() <= (Q2.GetYmin() + Q2.GetHLen())) {
 					axi_ps2_IntrDisable(&Ps2Inst, axi_ps2_IPIXR_ALL);
-					R2.SetHLen(R2.GetHLen()-50);
-					R2.Draw();
 					S1Flag = 0;
 					S1.SetXmin(Q1Small.GetXmin());
 					S1.SetYmin(Q1Small.GetYmin());
-					if(R2.GetHLen() > 0) {
+					if(R2.GetHLen() > R2.GetSpeed()) {
+						R2.SetHLen(R2.GetHLen()-R2.GetSpeed());
+						R2.Draw();
 
 						u8 i;
 						for(i = 0; i<1; i++) {
@@ -415,9 +408,11 @@ int main(void) {
 
 					}
 					else{
-						R2.SetHLen(0);
-						Q2.SetHLen(0);
-						Q2Small.SetHLen(0);
+						R2.Disable();
+						Q2.Disable();
+						Q2Small.Disable();
+						S2.Disable();
+						GameOver = 1;
 					}
 					axi_ps2_IntrEnable(&Ps2Inst, axi_ps2_IPIXR_ALL);
 			}
@@ -428,7 +423,7 @@ int main(void) {
 					S1.SetYmin(Q1Small.GetYmin());
 				}
 				else{
-					usleep(1000);
+					ShotFlyFlag = 1;
 					S1.SetXmin(S1.GetXmin() + S1.GetSpeed());
 				}
 			}
@@ -440,29 +435,31 @@ int main(void) {
 			if(S2.GetXmin() <= (Q1.GetXmin() + Q1.GetHLen()) &&
 			   S2.GetYmin() >= (Q1.GetYmin() - S2.GetHLen()) &&
 			   S2.GetYmin() <= (Q1.GetYmin() + Q1.GetHLen())) {
-				axi_ps2_IntrDisable(&Ps2Inst, axi_ps2_IPIXR_ALL);
-					R1.SetHLen(R1.GetHLen()-50);
-					R1.Draw();
+					axi_ps2_IntrDisable(&Ps2Inst, axi_ps2_IPIXR_ALL);
 					S2Flag = 0;
 					S2.SetXmin(Q2Small.GetXmin());
 					S2.SetYmin(Q2Small.GetYmin());
-					if(R1.GetHLen() > 0) {
-					u8 i;
-					for(i = 0; i<1; i++) {
-						Q1.SetRgb(0x000);
-						Q1.Draw();
-						usleep(100000);
-						Q1.SetRgb(SQ1_RGB);
-						Q1.Draw();
-						usleep(100000);
-					}
+					if(R1.GetHLen() > R1.GetSpeed()) {
+						R1.SetHLen(R1.GetHLen()-R1.GetSpeed());
+						R1.Draw();
 
+						u8 i;
+						for(i = 0; i<1; i++) {
+							Q1.SetRgb(0x000);
+							Q1.Draw();
+							usleep(100000);
+							Q1.SetRgb(SQ1_RGB);
+							Q1.Draw();
+							usleep(100000);
+						}
 
 					}
 					else{
-						R1.SetHLen(0);
-						Q1.SetHLen(0);
-						Q1Small.SetHLen(0);
+						R1.Disable();
+						Q1.Disable();
+						Q1Small.Disable();
+						S1.Disable();
+						GameOver = 1;
 					}
 					axi_ps2_IntrEnable(&Ps2Inst, axi_ps2_IPIXR_ALL);
 			}
@@ -473,12 +470,19 @@ int main(void) {
 					S2.SetYmin(Q2Small.GetYmin());
 				}
 				else{
-					usleep(1000);
+					ShotFlyFlag = 1;
 					S2.SetXmin(S2.GetXmin() - S2.GetSpeed());
 				}
 			}
 
 			S2.Draw();
+		}
+
+		if (ShotFlyFlag == 1 && ((S1Flag == 1) || (S2Flag == 1))) {
+			usleep(1000);
+		}
+		else {
+			ShotFlyFlag = 0;
 		}
 
 		}
@@ -490,6 +494,11 @@ int main(void) {
 		axi_ps2_IntrGlobalDisable(&Ps2Inst);
 
 		return XST_SUCCESS;
+}
+
+void resetGame(void) {
+
+
 }
 
 /****************************************************************************
